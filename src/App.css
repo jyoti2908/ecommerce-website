@@ -1,0 +1,33 @@
+.heart svg{
+    height: 25px;
+    width:25px;
+     margin-top: 11px;
+    margin-left: -39px;
+}
+
+.cart svg{
+   height: 25px;
+    width: 25px;
+    margin-top: 11px;
+    margin-left: -4px;
+}
+
+.add svg{
+    height: 25px;
+    width:25px;
+    margin-left: 130px;
+}
+
+.left svg{
+    margin-left: 19px;
+    height: 29px;
+    width: 16px;
+    margin-top: 1px;
+}
+
+.right svg{
+    margin-left: 19px;
+    height: 29px;
+    width: 16px;
+    margin-top: 1px;
+}
