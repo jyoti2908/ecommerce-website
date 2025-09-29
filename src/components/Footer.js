@@ -15,7 +15,7 @@ function Footer() {
                <a href ="https://www.instagram.com/"><FaSquareInstagram/></a>
             </div>
             <div className="mt-3 h-5 text-white text-xs text-center">
-                <p>Designed by @Jyoti Patel. All rights reserved.</p>
+                <p>Designed by © Jyoti Patel 2025. All rights reserved.</p>
             </div>
         </div>
     )

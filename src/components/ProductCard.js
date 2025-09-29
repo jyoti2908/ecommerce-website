@@ -18,7 +18,7 @@ function ProductCard({ item }) {
     return (
             
         <div>
-            <div key={item.id} className=" w-[290px] h-[370px] border-2 border-red-200 mt-20 shadow-xl shadow-red-100 ml-6 flex flex-wrap ">
+            <div key={item.id} className=" lg:w-72 sm:w-32 lg:h-96  sm:h-48  border-2 border-red-200 lg:mt-20 sm:mt-[24px] shadow-xl shadow-red-100 lg:ml-6 sm:ml-4 flex flex-wrap ">
                 <div>
                     <button onClick={handleWishlist} className="p-1 m-2 ml-60">
                         {liked ? (
