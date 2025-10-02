@@ -13,7 +13,7 @@ function Header() {
 
             {/* <div className=" h-14 bg-gray-700 flex justify-between p-4 items-center text-white fixed top-0 left-0 right-0 z-50"> */}
             <div className="h-8 w-8">
-                <Link to="/"><img src="logoapp.jpeg" className="ml-36"/></Link>
+                <Link to="/"><img src="logoapp.jpeg"/></Link>
             </div>
 
             {/* <div className="h-8 w-8 ">
@@ -55,7 +55,7 @@ function Header() {
                     <span className="text-red-500 text-sm -ml-4 font-medium">{totalItems}</span>
                 </div>
             </div> */}
-            <div className="flex gap-4 ml-32">
+            <div className="flex gap-4 ml-36">
                 <Link to="/wishlist">
                     <FaHeartCirclePlus className="text-xl sm:text-2xl" />
                 </Link> 
@@ -68,7 +68,7 @@ function Header() {
                 </div>
             </div>
 
-            <div className="flex gap-6 mt-2 ml-20 sm:mt-0">
+            <div className="flex gap-6 mt-2 ml-24 sm:mt-0">
                 <Link to="/login">
                     <button className="text-sm bg-gray-500 h-8 w-16 rounded-md hover:bg-red-500">Login</button>
                 </Link>
