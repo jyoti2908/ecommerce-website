@@ -14,7 +14,6 @@ function ProductCard({ item }) {
         setLiked(!liked); // Toggle state
         addToWishList(item); // Add to wishlist
     };
-
     return (
             
         <div>

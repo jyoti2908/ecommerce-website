@@ -9,19 +9,28 @@ function Header() {
     const { search, setSearch, category, setCategory } = useContext(ProductContext);
     const { totalItems } = useContext(CartContext);
     return (
-        <div className=" h-14 bg-gray-700 flex justify-between p-4 items-center text-white fixed top-0 left-0 right-0 z-50">
-            <div className="h-8 w-8 ">
-                <Link to="/"><img src="logoapp.jpeg" /></Link>
+        <div className="h-auto bg-gray-700 flex flex-col sm:flex-row sm:justify-between sm:items-center p-4 gap-3 text-white fixed top-0 left-0 right-0 z-50">
+
+            {/* <div className=" h-14 bg-gray-700 flex justify-between p-4 items-center text-white fixed top-0 left-0 right-0 z-50"> */}
+            <div className="h-8 w-8">
+                <Link to="/"><img src="logoapp.jpeg" className="ml-36"/></Link>
             </div>
+
+            {/* <div className="h-8 w-8 ">
+                <Link to="/"><img src="logoapp.jpeg" /></Link>
+            </div> */}
             <div>
-                <input type="text"
+                <input
+                    type="text"
                     placeholder="Search your products and more..."
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
-                    className="text-black lg:w-[521px] sm:w-24 sm:h-6 rounded-md shadow-md lg:h-8 text-center" />
+                    className="text-black w-full sm:w-48 md:w-96 h-8 rounded-md shadow-md px-2 text-sm"
+                />
             </div>
             <div>
-                <select className="text-black h-8 text-center rounded-md shadow-md w-40"
+                <select
+                    className="text-black h-8 rounded-md shadow-md text-sm w-full sm:w-40"
                     value={category}
                     onChange={(e) => setCategory(e.target.value)}
                 >
@@ -32,7 +41,7 @@ function Header() {
                     <option value="furniture">Furnitures</option>
                 </select>
             </div>
-            <div>
+            {/* <div>
                 <Link to="/wishlist"><span className="heart"><FaHeartCirclePlus /></span></Link>
             </div>
             <div className="flex content-between">
@@ -45,11 +54,27 @@ function Header() {
                     </div>
                     <span className="text-red-500 text-sm -ml-4 font-medium">{totalItems}</span>
                 </div>
+            </div> */}
+            <div className="flex gap-4 ml-32">
+                <Link to="/wishlist">
+                    <FaHeartCirclePlus className="text-xl sm:text-2xl" />
+                </Link> 
+
+                <div className="relative">
+                    <Link to="/cart">
+                        <HiOutlineShoppingCart className="text-xl sm:text-2xl" />
+                    </Link>
+                    <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-1 rounded-full">{totalItems}</span>
+                </div>
             </div>
 
-            <div className="flex gap-4">
-                <Link to="/login"><button className="mt-1 text-sm bg-gray-500 h-8 w-16 rounded-md hover:bg-red-500 gray-500 ml-6">Login</button></Link>
-                <Link to="/signup"><button className="mt-1 text-sm bg-gray-500 h-8 w-16 rounded-md hover:bg-red-500 ml-2">SignUp</button></Link>
+            <div className="flex gap-6 mt-2 ml-20 sm:mt-0">
+                <Link to="/login">
+                    <button className="text-sm bg-gray-500 h-8 w-16 rounded-md hover:bg-red-500">Login</button>
+                </Link>
+                <Link to="/signup">
+                    <button className="text-sm bg-gray-500 h-8 w-16 rounded-md hover:bg-red-500">SignUp</button>
+                </Link>
             </div>
         </div>
     )

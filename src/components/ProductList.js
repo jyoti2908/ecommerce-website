@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 import ProductCard from "./ProductCard";
 
 function ProductList() {
-    const {filteredProduct } = useContext(ProductContext);//We will use "filteredProduct" from ProductContext here.
+    const {filteredProduct } = useContext(ProductContext);// We will use "filteredProduct" from ProductContext here.
     const [index, setIndex] = useState(0) // For items per page.
     const itemsPerPage = 3 // For items per page.
 
