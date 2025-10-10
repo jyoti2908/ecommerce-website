@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import {CartProvider} from './context/CartContext'
 import { WishListProvider } from './context/WishContext';
 import Detailedpage from './pages/detailedpage';
+import Home from './components/Home';
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
         <BrowserRouter>
           <Header />
           <Routes>
-            <Route path="/" element={<ProductList />} />
+            <Route path="/" element={<Home/>} />
             <Route path="/detailedpage/:id" element={<Detailedpage />} />
             <Route path="/wishlist" element={<WishList />} />
             <Route path="/cart" element={<Cart />} />

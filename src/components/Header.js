@@ -30,7 +30,7 @@ function Header() {
             </div>
             <div>
                 <select
-                    className="text-black h-8 rounded-md shadow-md text-sm w-full sm:w-40"
+                    className="text-black h-8 rounded-md shadow-md text-sm w-full sm:w-40 text-center bg-red-300"
                     value={category}
                     onChange={(e) => setCategory(e.target.value)}
                 >
@@ -41,21 +41,8 @@ function Header() {
                     <option value="furniture">Furnitures</option>
                 </select>
             </div>
-            {/* <div>
-                <Link to="/wishlist"><span className="heart"><FaHeartCirclePlus /></span></Link>
-            </div>
-            <div className="flex content-between">
-                <div>
-                    <Link to="/cart"><span className="cart">< HiOutlineShoppingCart /></span></Link>
-                </div>
-                <div className="flex">
-                    <div
-                        className="h-5 w-5 bg-gray-100 rounded-full">
-                    </div>
-                    <span className="text-red-500 text-sm -ml-4 font-medium">{totalItems}</span>
-                </div>
-            </div> */}
-            <div className="flex gap-4 ml-36">
+    
+            <div className="flex gap-8 ml-36">
                 <Link to="/wishlist">
                     <FaHeartCirclePlus className="text-xl sm:text-2xl" />
                 </Link> 
@@ -70,10 +57,10 @@ function Header() {
 
             <div className="flex gap-6 mt-2 ml-24 sm:mt-0">
                 <Link to="/login">
-                    <button className="text-sm bg-gray-500 h-8 w-16 rounded-md hover:bg-red-500">Login</button>
+                    <button className="text-sm bg-gray-500 h-8 w-20 rounded-md hover:bg-red-500">Login</button>
                 </Link>
                 <Link to="/signup">
-                    <button className="text-sm bg-gray-500 h-8 w-16 rounded-md hover:bg-red-500">SignUp</button>
+                    <button className="text-sm bg-gray-500 h-8 w-24 rounded-md hover:bg-red-500">SignUp</button>
                 </Link>
             </div>
         </div>

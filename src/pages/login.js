@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import '../App.css';
 
 function Login() {
     const [userName, setUserName] = useState("");
@@ -53,7 +54,7 @@ function Login() {
     // }, [])
     // _________________________________________________________
     return (
-        <div className="mt-24 ml-96 rounded-lg h-[300px] w-[504px] bg-blue-200">
+        <div className="loginForm mt-24 ml-96 rounded-lg h-[300px] w-[504px] bg-blue-200">
             <form>
                 <label className="ml-5"> Username: </label>
                 <input className="mt-8 ml-4 h-8 w-[340px] rounded-md text-center" type='text' placeholder='Username' value={userName}
