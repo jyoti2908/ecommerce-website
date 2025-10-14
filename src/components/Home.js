@@ -1,10 +1,12 @@
+import Display from "./Display";
 import ProductList from "./ProductList";
 import SlidingProducts from "./SlidingProducts";
 
 function Home() {
     return (
         <div>
-            <div className="relative w-full h-[400px] overflow-hidden bg-gray-100 group">
+            <SlidingProducts />
+            <div className="relative w-full h-[380px] overflow-hidden bg-gray-100 group mt--4">
                 <img className="absolute w-full h-[400px] mt-8 object-cover group-hover:animate-none animate-staticShow"
                     src="one.jpg"
                     style={{ animationDelay: '0s' }} />
@@ -19,7 +21,8 @@ function Home() {
                     style={{ animationDelay: '12s' }} />
             </div>
             <ProductList />
-            <SlidingProducts/>
+            <Display />
+
         </div>
     )
 }
