@@ -57,10 +57,10 @@ function Header() {
 
             <div className="flex gap-6 mt-2 ml-24 sm:mt-0">
                 <Link to="/login">
-                    <button className="text-md text-white h-8 w-20 rounded-md bg-red-400 hover:bg-red-500">Login</button>
+                    <button className="text-sm text-white h-8 w-20 rounded-md bg-red-400 hover:bg-red-500">Login</button>
                 </Link>
                 <Link to="/signup">
-                    <button className="text-md text-white bg-red-400 h-8 w-24 rounded-md hover:bg-red-500">SignUp</button>
+                    <button className="text-sm text-white bg-red-400 h-8 w-24 rounded-md hover:bg-red-500">SignUp</button>
                 </Link>
             </div>
         </div>

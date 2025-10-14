@@ -17,7 +17,9 @@ function ProductCard({ item }) {
     };
     return(
         <div>
-            <div key={item.id} className="card w-72 h-80 rounded border-2 border-red-200 mt-8 shadow-xl shadow-red-100 ml-16 flex flex-wrap bg-red-200 transition-transform duration-500 ease-in-out hover:animate pulse">
+            <div key={item.id} className="card w-72 h-80 rounded mt-8 shadow-xl shadow-red-100 ml-16 flex flex-wrap 
+            bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-500 
+            transition-transform duration-300 hover:scale-90">
                 <div>
                     <button onClick={handleWishlist} className="p-1 m-2 ml-60">
                         {liked ? (
@@ -30,7 +32,7 @@ function ProductCard({ item }) {
 
                 <div>
                     <Link to={`/detailedpage/${item.id}`}>
-                    <img className="image h-36 w-36 ml-16" src={item.thumbnail} />
+                    <img className="image h-36 w-36 ml-16 transition-opacity duration-300 hover:opacity-50" src={item.thumbnail} />
                     </Link>
                 </div>
                 <div className="details text-center w-full">
@@ -40,7 +42,7 @@ function ProductCard({ item }) {
                     </Link>
                 </div>
                 <br />
-                <button className="addButton h-8 w-20 rounded-md bg-gray-500 border-black-100 p-1 m-2 ml-[100px] text-white text-xs hover:bg-red-500 " onClick={() => addToCart(item)}> Add to Cart</button>
+                <button className="addButton h-8 w-20 rounded-md bg-gray-500 p-1 m-2 ml-[100px] text-white text-xs hover:bg-red-500 " onClick={() => addToCart(item)}> Add to Cart</button>
                 <br />
             </div>
 

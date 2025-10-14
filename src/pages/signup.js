@@ -39,6 +39,7 @@ function SignUp() {
         }
     }
     return (
+        <div className="h-screen w-screen">
         <div className="ml-96 mt-24 rounded-lg h-[400px] w-[504px] bg-blue-200" >
             <form>
                 <div>
@@ -69,6 +70,7 @@ function SignUp() {
             {showMessage && <div className="text-red-600 mt-2 ml-[180px] text-lg"><b>Signed Up Successfully!</b></div>}
             <br />
             <button className="ml-60 h-8 w-[70px] rounded-full bg-blue-400 hover:bg-blue-800 hover:text-white" onClick={() => handleSignUp()}>Submit</button>
+        </div>
         </div>
     )
 }

@@ -6,7 +6,7 @@ function Login() {
     const [userName, setUserName] = useState("");
     const [userPassword, setUserPassword] = useState("");
     const [showMessage, setShowMessage] = useState(false);
-      const navigate = useNavigate(); // Hook to redirect
+    const navigate = useNavigate(); // Hook to redirect
     // ________________________________________________________
     function handleFormSubmit() {
         if (!userName) {
@@ -28,12 +28,12 @@ function Login() {
                     password: 'emilyspass',
                     expiresInMins: 30,
                 }),
-               
+
             })
             const data = await response.json();
             console.log('Fetched data:', data);
 
-            if (response.ok) { 
+            if (response.ok) {
                 localStorage.setItem('accessToken', data.token);
                 setShowMessage(true);
                 setTimeout(() => {
@@ -49,29 +49,27 @@ function Login() {
             console.log("Fetched error:", error)
         }
     }
-    // useEffect(() => {
-    //     fetchData();
-    // }, [])
     // _________________________________________________________
     return (
-        <div className="loginForm mt-24 ml-96 rounded-lg h-[300px] w-[504px] bg-blue-200">
-            <form>
-                <label className="ml-5"> Username: </label>
-                <input className="mt-8 ml-4 h-8 w-[340px] rounded-md text-center" type='text' placeholder='Username' value={userName}
-                    title='Username can be your Email or Phone Number'
-                    onChange={(e) => (setUserName(e.target.value))} />
+        <div className="h-screen w-screen">
+            <div className="loginForm mt-24 ml-96 rounded-lg h-[300px] w-[504px] bg-blue-200">
+                <form>
+                    <label className="ml-5"> Username: </label>
+                    <input className="mt-8 ml-4 h-8 w-[340px] rounded-md text-center" type='text' placeholder='Username' value={userName}
+                        title='Username can be your Email or Phone Number'
+                        onChange={(e) => (setUserName(e.target.value))} />
+                    <br />
+                    <label className="ml-6"> Password: </label>
+                    <input className="mt-8 ml-4 h-8 w-[340px] rounded-md text-center" type='password' placeholder='Password' value={userPassword} onChange={(e) => (setUserPassword(e.target.value))} />
+                </form>
+                <br></br>
+                {showMessage && <div className="ml-[190px] text-green-400 text-lg font-serif"> <b>Login successful!</b></div>}
                 <br />
-                <label className="ml-6"> Password: </label>
-                <input className="mt-8 ml-4 h-8 w-[340px] rounded-md text-center" type='password' placeholder='Password' value={userPassword} onChange={(e) => (setUserPassword(e.target.value))} />
-            </form>
-            <br></br>
-            {showMessage && <div className="ml-[190px] text-green-400 text-lg font-serif"> <b>Login successful!</b></div>}
-            <br />
-            <button className=" ml-60 h-8 w-[70px] rounded-full bg-blue-400 hover:bg-blue-800 hover:text-white" onClick={() => handleFormSubmit()}>Submit</button>
+                <button className=" ml-60 h-8 w-[70px] rounded-full bg-blue-400 hover:bg-blue-800 hover:text-white" onClick={() => handleFormSubmit()}>Submit</button>
 
-            <h2 className="ml-32 mt-4">If not registered already, kindly <Link to="/signup" className="text-red-500 hover:text-red-900">SignUp !</Link></h2>
+                <h2 className="ml-32 mt-4">If not registered already, kindly <Link to="/signup" className="text-red-500 hover:text-red-900">SignUp !</Link></h2>
+            </div>
         </div>
-
     )
 }
 export default Login;

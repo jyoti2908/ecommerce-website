@@ -32,6 +32,10 @@
     margin-top: 1px;
 }
 
+/* #wish::-webkit-scrollbar{
+display: none;
+} */
+
 @media (max-width: 639px) {
     .leftButton {
         height: 30px;

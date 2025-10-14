@@ -6,6 +6,7 @@ function Cart() {
   const { cartItems, removeFromCart, updateQuantity, totalPrice } = useContext(CartContext);
 
   return (
+    <div className="h-screen w-screen">
     <div className="flex">
       <div>
         <h3 className="p-2 mt-12 border-2 rounded-xl bg-green-300 h-16 w-44 text-center">Total price = $ {totalPrice}</h3>
@@ -38,6 +39,7 @@ function Cart() {
           </div>
         ))
       )}
+    </div>
     </div>
   );
 };

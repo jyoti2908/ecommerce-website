@@ -19,7 +19,7 @@ function ProductList() {
     return (
         <div className=" holder flex flex-wrap">
             <button onClick={handleLeftButton} disabled={index === 0}
-                className="leftButton h-14 w-14 bg-red-400 mt-36 rounded-full ml-6 hover:bg-gray-400" >
+                className="leftButton h-14 w-14 bg-red-400 mt-40 rounded-full ml-6 hover:bg-gray-400" >
                 <span className="left"><FaArrowLeft /></span>
             </button>
             {filteredProduct.slice(index, index + itemsPerPage).map((item) => (

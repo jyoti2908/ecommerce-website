@@ -6,7 +6,7 @@ import { FaSquareInstagram } from "react-icons/fa6";
 
 function Footer() {
     return (
-        <div className="h-14 bg-gray-700 p-2 text-white fixed bottom-0 left-0 right-0 z-50">
+        <div className="h-14 bg-gray-700 p-2 text-white">
             <div className="flex flex-row justify-center gap-1">
                <a href ="https://www.facebook.com/"><FaFacebook/></a>
                <a href="https://x.com/"> <FaTwitterSquare /></a>
