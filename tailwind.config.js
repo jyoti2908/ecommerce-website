@@ -37,7 +37,7 @@ export default {
         slideRight: 'slideRight 16s linear infinite',
         marquee: "marquee 15s linear infinite",
         shake: 'shake 0.5s ease',
-          flash: 'flash 1s ease-in-out infinite',
+        flash: 'flash 1s ease-in-out infinite',
       }
 
     },

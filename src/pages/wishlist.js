@@ -48,7 +48,7 @@ function Wishlist() {
                     onClick={handleShake} 
                     className={`mt-6 mb-4 flex justify-center items-center bg-yellow-500 font-semibold h-12 w-72 rounded
                     mx-auto block transition-shadow duration-300 shadow-md hover:shadow-xl animate-shake
-                    bg-transparent`}>
+                    `}>
                     PROCEED TO PAYMENT PAGE
                     <Link to="/cart"><FaArrowRightToBracket className=" ml-4 h-6 w-8 transition-transform duration-300 hover:translate-x-4" /></Link>
                     </button>

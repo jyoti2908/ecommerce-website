@@ -29,7 +29,7 @@ function ProductProvider({ children }) {//all the child componenets will reveive
     )
     //____________________________________________________________
     return (
-        <ProductContext.Provider value={{ products, filteredProduct, search, setSearch, category, setCategory }}> //from here we will pass all the data//
+        <ProductContext.Provider value={{ products, filteredProduct, search, setSearch, category, setCategory }}>
             {children}
         </ProductContext.Provider>
     )
