@@ -19,7 +19,8 @@ function ProductCard({ item }) {
         <div>
             <div key={item.id} className="card w-72 h-80 rounded mt-6 shadow-xl shadow-red-100 ml-16 flex flex-wrap 
             bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-500 
-            transition-transform duration-300 hover:scale-90">
+            transition-transform duration-300 hover:scale-90">               
+        
                 <div>
                     <button onClick={handleWishlist} className="p-1 m-2 ml-60">
                         {liked ? (
@@ -50,3 +51,5 @@ function ProductCard({ item }) {
     )
 }
 export default ProductCard;
+
+    
