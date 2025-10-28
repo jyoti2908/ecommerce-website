@@ -17,9 +17,9 @@ function ProductList() {
         setIndex(prev => prev + 1);
     }
     return (
-        <div className="flex md:flex-row flex-col">
+        <div className="flex md:flex-row flex-col md:ml-44 mt-2">
             <button onClick={handleLeftButton} disabled={index === 0}
-                className=" mx-auto mt-4 h-14 w-14 bg-red-400 md:mt-32 rounded-full md:ml-28 hover:bg-gray-400" >
+                className="mt-4 h-14 w-14 bg-red-400 md:mt-32 rounded-full hover:bg-gray-400 mx-auto md:mx-0">
                 <span className="left"><FaArrowLeft /></span>
             </button>
             {filteredProduct.slice(index, index + itemsPerPage).map((item) => (

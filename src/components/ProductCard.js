@@ -16,8 +16,8 @@ function ProductCard({ item }) {
         addToWishList(item); // Add to wishlist
     };
     return (
-        <div className="px-4 md:px-0">
-            <div key={item.id} className="mx-auto card md:w-60 h-64 rounded mt-6 shadow-xl shadow-red-100 md:ml-12 flex flex-wrap 
+        <div>
+            <div key={item.id} className="mx-auto w-56 h-64 rounded mt-6 shadow-xl shadow-red-100 md:ml-8 flex flex-wrap 
             bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-500 
             transition-transform duration-300 hover:scale-90">
                 <div>
