@@ -17,7 +17,7 @@ function ProductCard({ item }) {
     };
     return(
         <div>
-            <div key={item.id} className="card md:w-72 md:h-80 rounded mt-6 shadow-xl shadow-red-100 ml-16 flex flex-wrap 
+            <div key={item.id} className="card md:w-72 md:h-80 rounded mt-6 shadow-xl shadow-red-100 md:ml-16 flex flex-wrap 
             bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-500 
             transition-transform duration-300 hover:scale-90">               
         
