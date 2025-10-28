@@ -31,3 +31,7 @@
     width: 16px;
     margin-top: 1px;
 }
+
+body {
+  overflow-y: auto; /* or scroll */
+}

@@ -52,7 +52,7 @@ function Login() {
     // _________________________________________________________
     return (
         <div className="w-screen px-4 py-4 mx-auto h-auto ">
-            <div className="mx-auto md:mt-12 mt-6 md:ml-96 rounded-lg md:h-[300px] md:w-[504px] bg-blue-200 py-4 px-2">
+            <div className="md:mt-12 mt-6 md:ml-96 rounded-lg md:h-[300px] md:w-[504px] bg-blue-200 py-4 px-2">
                 <form>
                     <label className="md:ml-5"> Username: </label>
                     <input className="mt-8 ml-4 h-8 md:w-[340px] rounded-md text-center" type='text' placeholder='Username' value={userName}
@@ -63,9 +63,9 @@ function Login() {
                     <input className="mt-8 md:ml-4  ml-6 h-8 md:w-[340px] rounded-md text-center" type='password' placeholder='Password' value={userPassword} onChange={(e) => (setUserPassword(e.target.value))} />
                 </form>
                 <br></br>
-                {showMessage && <div className="text-center text-green-400 text-lg font-serif"> <b>Login successful!</b></div>}
+                {showMessage && <div className="text-center text-green-400 text-lg font-serif"><b>Login successful!</b></div>}
                 <br />
-                <button className="display-block h-8 w-[70px] rounded-full bg-blue-400 hover:bg-blue-800 hover:text-white" onClick={() => handleFormSubmit()}>Submit</button>
+                <button className="h-8 w-[70px] rounded-full bg-blue-400 hover:bg-blue-800 hover:text-white" onClick={() => handleFormSubmit()}>Submit</button>
 
                 <h2 className="text-center mt-4">If not registered already, kindly <Link to="/signup" className="text-red-500 hover:text-red-900">SignUp !</Link></h2>
             </div>
