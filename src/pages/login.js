@@ -51,23 +51,23 @@ function Login() {
     }
     // _________________________________________________________
     return (
-        <div className="h-screen w-screen">
-            <div className="loginForm mt-24 ml-96 rounded-lg h-[300px] w-[504px] bg-blue-200">
+        <div className="min-h-screen w-screen">
+            <div className="mx-auto mt-24 md:ml-96 rounded-lg md:h-[300px] md:w-[504px] bg-blue-200 py-4 px-2">
                 <form>
                     <label className="ml-5"> Username: </label>
-                    <input className="mt-8 ml-4 h-8 w-[340px] rounded-md text-center" type='text' placeholder='Username' value={userName}
+                    <input className="mt-8 ml-4 h-8 md:w-[340px] rounded-md text-center" type='text' placeholder='Username' value={userName}
                         title='Username can be your Email or Phone Number'
                         onChange={(e) => (setUserName(e.target.value))} />
                     <br />
                     <label className="ml-6"> Password: </label>
-                    <input className="mt-8 ml-4 h-8 w-[340px] rounded-md text-center" type='password' placeholder='Password' value={userPassword} onChange={(e) => (setUserPassword(e.target.value))} />
+                    <input className="mt-8 ml-4 h-8 md:w-[340px] rounded-md text-center" type='password' placeholder='Password' value={userPassword} onChange={(e) => (setUserPassword(e.target.value))} />
                 </form>
                 <br></br>
-                {showMessage && <div className="ml-[190px] text-green-400 text-lg font-serif"> <b>Login successful!</b></div>}
+                {showMessage && <div className="text-center text-green-400 text-lg font-serif"> <b>Login successful!</b></div>}
                 <br />
-                <button className=" ml-60 h-8 w-[70px] rounded-full bg-blue-400 hover:bg-blue-800 hover:text-white" onClick={() => handleFormSubmit()}>Submit</button>
+                <button className="display-block h-8 w-[70px] rounded-full bg-blue-400 hover:bg-blue-800 hover:text-white" onClick={() => handleFormSubmit()}>Submit</button>
 
-                <h2 className="ml-32 mt-4">If not registered already, kindly <Link to="/signup" className="text-red-500 hover:text-red-900">SignUp !</Link></h2>
+                <h2 className="text-center mt-4">If not registered already, kindly <Link to="/signup" className="text-red-500 hover:text-red-900">SignUp !</Link></h2>
             </div>
         </div>
     )
