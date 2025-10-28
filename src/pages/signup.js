@@ -39,37 +39,37 @@ function SignUp() {
         }
     }
     return (
-        <div className="min-h-screen w-screen">
-        <div className="md:ml-96 mt-24 rounded-lg md:h-[400px] md:w-[504px] bg-blue-200 px-2 py-4" >
+        <div className="h-auto w-screen px-4 py-4">
+        <div className="md:ml-96 md:mt-12 mt-6 rounded-lg md:h-[400px] md:w-[504px] bg-blue-200 px-2 py-4" >
             <form>
                 <div>
-                    <label className="ml-4"> Firstname: </label>
+                    <label className="md:ml-4"> Firstname: </label>
                     <input className="mt-8 ml-4 h-8 md:w-[340px] rounded-md text-center" type='text' placeholder='FirstName' value={userFirstName} title='Firstname should be in Capital only' onChange={(e) => setUserFirstName(e.target.value)} />
                 </div>
                 <div>
-                    <label className="ml-4"> Lastname: </label>
+                    <label className="md:ml-4"> Lastname: </label>
                     <input className="mt-4 ml-4 h-8 md:w-[340px] rounded-md text-center" type='text' placeholder='LastName' value={userLastName} title='Lastname should be in capital only' onChange={(e) => setUserLastName(e.target.value)} />
                 </div>
                 <div>
-                    <label className="ml-4"> Contact No: </label>
+                    <label className="md:ml-4"> Contact No: </label>
                     <input className="mt-4 ml-1 h-8 md:w-[340px] rounded-md text-center" type='number' placeholder='Contact No' value={userNumber} onChange={(e) => setUserNumber(e.target.value)} />
                 </div>
                 <div>
-                    <label className="ml-4"> Address: </label>
+                    <label className="md:ml-4"> Address: </label>
                     <input className="mt-4 ml-7 h-8 md:w-[340px] rounded-md text-center" type='text' placeholder='Address' value={userAddress} onChange={(e) => setUserAddress(e.target.value)} />
                 </div>
                 <div>
-                    <label className="ml-4"> Email: </label>
+                    <label className="md:ml-4"> Email: </label>
                     <input className="mt-4 ml-12 h-8 md:w-[340px] rounded-md text-center" type='text' placeholder='Email' value={userEmail} onChange={(e) => setUserEmail(e.target.value)} />
                 </div>
                 <div>
-                    <label className="ml-4"> Password: </label>
+                    <label className="md:ml-4"> Password: </label>
                     <input className="mt-4 ml-4 h-8 md:w-[340px] rounded-md text-center" type='password' placeholder='Password' value={userPass} onChange={(e) => setUserPass(e.target.value)} />
                 </div>
             </form>
             {showMessage && <div className="text-red-600 mt-2 text-center text-lg"><b>Signed Up Successfully!</b></div>}
             <br />
-            <button className="md:ml-60 h-8 w-[70px] rounded-full bg-blue-400 hover:bg-blue-800 hover:text-white" onClick={() => handleSignUp()}>Submit</button>
+            <button className="h-8 w-[70px] rounded-full bg-blue-400 hover:bg-blue-800 hover:text-white" onClick={() => handleSignUp()}>Submit</button>
         </div>
         </div>
     )

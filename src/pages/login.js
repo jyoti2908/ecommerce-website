@@ -51,16 +51,16 @@ function Login() {
     }
     // _________________________________________________________
     return (
-        <div className="min-h-screen w-screen">
-            <div className="mx-auto mt-24 md:ml-96 rounded-lg md:h-[300px] md:w-[504px] bg-blue-200 py-4 px-2">
+        <div className="w-screen px-4 py-4 mx-auto h-auto ">
+            <div className="mx-auto md:mt-12 mt-6 md:ml-96 rounded-lg md:h-[300px] md:w-[504px] bg-blue-200 py-4 px-2">
                 <form>
-                    <label className="ml-5"> Username: </label>
+                    <label className="md:ml-5"> Username: </label>
                     <input className="mt-8 ml-4 h-8 md:w-[340px] rounded-md text-center" type='text' placeholder='Username' value={userName}
                         title='Username can be your Email or Phone Number'
                         onChange={(e) => (setUserName(e.target.value))} />
                     <br />
-                    <label className="ml-6"> Password: </label>
-                    <input className="mt-8 ml-4 h-8 md:w-[340px] rounded-md text-center" type='password' placeholder='Password' value={userPassword} onChange={(e) => (setUserPassword(e.target.value))} />
+                    <label className="md:ml-6"> Password: </label>
+                    <input className="mt-8 md:ml-4  ml-6 h-8 md:w-[340px] rounded-md text-center" type='password' placeholder='Password' value={userPassword} onChange={(e) => (setUserPassword(e.target.value))} />
                 </form>
                 <br></br>
                 {showMessage && <div className="text-center text-green-400 text-lg font-serif"> <b>Login successful!</b></div>}

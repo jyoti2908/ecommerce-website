@@ -39,12 +39,12 @@ function Details() {
                 </div>
                 <div>
                     <div className="flex md:justify-around md:gap-4 gap-6">
-                        <img className="h-12 w-16 rounded-full mt-4 md:mt-0 ml-8 md:ml-0" src="original.webp" />
+                        <img className="h-12 w-16 rounded-full mt-4 md:mt-0" src="original.webp" />
                         <p className="mt-4 md:mt-0"><span className="font-bold text-md">100% ORIGINAL</span> gaurantee for <br /> all products at myntra.com</p>
                     </div>
                     <br />
                     <div className="flex justify-start gap-4">
-                        <img className="h-12 w-12 rounded-full md:ml-2 ml-12" src="return.jpg" />
+                        <img className="h-12 w-12 rounded-full md:ml-2 ml-2" src="return.jpg" />
                         <p className="ml-4"><span className="font-bold">Return within 14days </span><br /> of receiving your order</p>
                     </div>
                 </div>

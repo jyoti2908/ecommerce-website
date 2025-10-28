@@ -16,8 +16,8 @@ function ProductCard({ item }) {
         addToWishList(item); // Add to wishlist
     };
     return(
-        <div>
-            <div key={item.id} className="mx-auto card md:w-72 md:h-80 rounded mt-6 shadow-xl shadow-red-100 md:ml-16 flex flex-wrap 
+        <div className="px-2 md:px-0">
+            <div key={item.id} className="mx-auto card md:w-72 h-80 rounded mt-6 shadow-xl shadow-red-100 md:ml-16 flex flex-wrap 
             bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-500 
             transition-transform duration-300 hover:scale-90">               
         
@@ -33,7 +33,7 @@ function ProductCard({ item }) {
 
                 <div>
                     <Link to={`/detailedpage/${item.id}`}>
-                    <img className="image h-36 w-36 ml-16 transition-opacity duration-300 hover:opacity-50" src={item.thumbnail} />
+                    <img className="h-36 w-36 md:ml-16 ml-24 transition-opacity duration-300 hover:opacity-50" src={item.thumbnail} />
                     </Link>
                 </div>
                 <div className="details text-center w-full">
@@ -43,7 +43,7 @@ function ProductCard({ item }) {
                     </Link>
                 </div>
                 <br />
-                <button className="animate-shake addButton h-8 w-20 rounded-md bg-gray-500 p-1 m-2 md:ml-[100px] text-white text-xs hover:bg-red-500 mx-auto " onClick={() => addToCart(item)}> Add to Cart</button>
+                <button className="animate-shake h-8 w-20 rounded-md bg-gray-500 p-1 m-2 md:ml-[100px] text-white text-xs hover:bg-red-500 mx-auto " onClick={() => addToCart(item)}> Add to Cart</button>
                 <br />
             </div>
 
