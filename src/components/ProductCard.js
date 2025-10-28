@@ -18,7 +18,7 @@ function ProductCard({ item }) {
     return (
         <div>
             <div key={item.id} className="mx-auto w-56 h-64 rounded mt-6 shadow-xl shadow-red-100 md:ml-8 flex flex-wrap 
-            bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-500 
+            bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-500
             transition-transform duration-300 hover:scale-90">
                 <div>
                     <button onClick={handleWishlist} className="p-1 m-2">
