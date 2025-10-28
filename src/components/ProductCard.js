@@ -16,8 +16,8 @@ function ProductCard({ item }) {
         addToWishList(item); // Add to wishlist
     };
     return(
-        <div>
-            <div key={item.id} className="card w-72 h-80 rounded mt-6 shadow-xl shadow-red-100 ml-16 flex flex-wrap 
+        <div className="px-2">
+            <div key={item.id} className="card md:w-72 md:h-80 rounded mt-6 shadow-xl shadow-red-100 md:ml-16 flex flex-wrap 
             bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-500 
             transition-transform duration-300 hover:scale-90">               
         
@@ -33,7 +33,7 @@ function ProductCard({ item }) {
 
                 <div>
                     <Link to={`/detailedpage/${item.id}`}>
-                    <img className="image h-36 w-36 ml-16 transition-opacity duration-300 hover:opacity-50" src={item.thumbnail} />
+                    <img className="image md:h-36 w-36 ml-16 transition-opacity duration-300 hover:opacity-50" src={item.thumbnail} />
                     </Link>
                 </div>
                 <div className="details text-center w-full">

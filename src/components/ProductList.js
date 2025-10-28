@@ -17,15 +17,15 @@ function ProductList() {
         setIndex(prev => prev + 1);
     }
     return (
-        <div className=" holder flex flex-wrap">
+        <div className="flex flex-wrap">
             <button onClick={handleLeftButton} disabled={index === 0}
-                className="leftButton h-14 w-14 bg-red-400 mt-40 rounded-full ml-6 hover:bg-gray-400" >
+                className="leftButton mx-auto h-14 w-14 bg-red-400 md:mt-40 mt-4 rounded-full md:ml-6 hover:bg-gray-400" >
                 <span className="left"><FaArrowLeft /></span>
             </button>
             {filteredProduct.slice(index, index + itemsPerPage).map((item) => (
                 <ProductCard key={item.id} item={item} /> // we are passing entire item as a prop to child component(ProductCard.js)
             ))}
-            <button onClick={handleRightButton} disabled={index === filteredProduct.length - 3} className=" rightButton h-14 w-14 bg-red-400 mt-40 rounded-full mt-36 ml-12 hover:bg-gray-400" >
+            <button onClick={handleRightButton} disabled={index === filteredProduct.length - 3} className=" rightButton h-14 w-14 bg-red-400 md:mt-40 rounded-full md:mt-36 md:ml-12 mx-auto mt-4 hover:bg-gray-400" >
                 <span className="right"><FaArrowRight /></span>
             </button>
         </div>

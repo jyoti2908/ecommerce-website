@@ -1,7 +1,7 @@
 function SlidingProducts() {
     return (
         <div>
-            <div className="flex m-4 px-8 py-2 mt-12 rounded h-32 w-[1230px] gap-16 bg-gray-100">
+            <div className="flex m-4 px-8 py-2 md:mt-12 rounded h-32 md:w-[1230px] gap-16 bg-gray-100">
                 <div>
                     <img className="h-16 w-24 transition-transform duration-300 hover:scale-75" src="1.webp" />
                     <p className="text-sm font-semibold">Minutes</p>

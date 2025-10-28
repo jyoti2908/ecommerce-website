@@ -20,7 +20,7 @@ function Header() {
             40vw means 40% of the width of the entire browser window, not the parent container.*/}
             <input
                 type="text"
-                placeholder="Search..."
+                placeholder="Search"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 className="text-black h-6 sm:h-7 px-2 rounded-md text-xs shadow-md w-[40vw] sm:w-[180px] md:w-[280px] min-w-0 flex-1"
