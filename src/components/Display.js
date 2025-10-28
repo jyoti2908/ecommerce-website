@@ -34,7 +34,7 @@ function Display() {
                 </div>
             </div>
             <div>
-                <img src="shop.webp" className="h-full md:w-96" />
+                <img src="shop.webp" className="md:h-full md:w-96" />
             </div>
         </div>
     )

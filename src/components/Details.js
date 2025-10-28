@@ -1,7 +1,7 @@
 function Details() {
     return (
         <div className="bg-gray-100 px-4 py-4 mt-6">
-            <div className="flex justify-around mt-12">
+            <div className="flex md:flex-row flex-col justify-around md:mt-12 mt-4">
                 <div>
                     <p className="text-xs font-bold">ONLINE SHOPPING</p>
                     <br />
@@ -17,7 +17,7 @@ function Details() {
                     </ul>
                 </div>
                 <div>
-                    <p className="text-xs font-bold">CUSTOMER POLICIES</p>
+                    <p className="text-xs font-bold mt-4 md:mt-0">CUSTOMER POLICIES</p>
                     <br />
                     <ul className="text-sm text-gray-500">
                         <li>Contact Us</li>
@@ -33,7 +33,7 @@ function Details() {
                     </ul>
                 </div>
                 <div>
-                    <p className="text-xs font-bold">EXPERIENCE MYNTRA APP ON MOBILE</p><br />
+                    <p className="text-xs font-bold mt-4 md:mt-0">EXPERIENCE MYNTRA APP ON MOBILE</p><br />
                     <img className="h-12 w-36 rounded" src="google.jpg" />
                     <img className="h-12 w-36 mt-6 rounded" src="apple.jpg" />
                 </div>
@@ -49,8 +49,8 @@ function Details() {
                     </div>
                 </div>
             </div>
-            <div className="px-16 py-6">
-                <p className="text-xs font-bold">POPULAR SEARCHES</p>
+            <div className="md:px-16 md:py-6">
+                <p className="text-xs font-bold mt-4 md:mt-0">POPULAR SEARCHES</p>
                 <p className="text-sm text-gray-500 mt-2 leading-normal"> Makeup |  Boxers | Dresses For Girls | T-Shirts | Sandals | Headphones | Babydolls | Blazers For Men | Handbags | Ladies | Watches |  Bags | Sport Shoes | Reebok Shoes | Puma Shoes |
                     Makeup | Photo Frames | Wallets | Tops | Earrings | Fastrack | Watches | Kurtis | Nike | Smart | Watches  | Titan Watches | Designer Blouse | Gowns | Rings | Cricket Shoes | Forever 21  Eye
                     Adidas Shoes | Woodland Shoes | Punjabi Suits | Bikini  | Myntra Fashion Show | Lipstick | Saree | Watches | Dresses | Lehenga | Nike Shoes | Goggles | Bras | Suit  | Chinos | Shoes
