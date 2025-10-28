@@ -15,14 +15,13 @@ function ProductCard({ item }) {
         setLiked(!liked); // Toggle state
         addToWishList(item); // Add to wishlist
     };
-    return(
-        <div className="px-2 md:px-0">
-            <div key={item.id} className="mx-auto card md:w-72 h-80 rounded mt-6 shadow-xl shadow-red-100 md:ml-16 flex flex-wrap 
+    return (
+        <div className="px-4 md:px-0">
+            <div key={item.id} className="mx-auto card md:w-60 h-64 rounded mt-6 shadow-xl shadow-red-100 md:ml-12 flex flex-wrap 
             bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-500 
-            transition-transform duration-300 hover:scale-90">               
-        
+            transition-transform duration-300 hover:scale-90">
                 <div>
-                    <button onClick={handleWishlist} className="p-1 m-2 ml-60">
+                    <button onClick={handleWishlist} className="p-1 m-2">
                         {liked ? (
                             <FaHeart className="text-red-500" /> // Filled heart with red color
                         ) : (
@@ -30,26 +29,24 @@ function ProductCard({ item }) {
                         )}
                     </button>
                 </div>
-
                 <div>
                     <Link to={`/detailedpage/${item.id}`}>
-                    <img className="h-36 w-36 md:ml-16 ml-24 transition-opacity duration-300 hover:opacity-50" src={item.thumbnail} />
+                        <img className="h-32 w-32 mt-4 block mx-auto transition-opacity duration-300 hover:opacity-50" src={item.thumbnail} />
                     </Link>
                 </div>
                 <div className="details text-center w-full">
                     <Link to={`/detailedpage/${item.id}`}>
-                    <h2><b>{item.title}</b></h2>
-                    <p>Price: $ {item.price}</p>
+                        <h2><b>{item.title}</b></h2>
+                        <p>Price: $ {item.price}</p>
                     </Link>
                 </div>
                 <br />
-                <button className="animate-shake h-8 w-20 rounded-md bg-gray-500 p-1 m-2 md:ml-[100px] text-white text-xs hover:bg-red-500 mx-auto " onClick={() => addToCart(item)}> Add to Cart</button>
+                <button className="animate-shake h-6 w-20 rounded-md bg-gray-500 p-1 m-2 text-white text-xs hover:bg-red-500 mx-auto" onClick={() => addToCart(item)}> Add to Cart</button>
                 <br />
             </div>
 
-        </div>     
+        </div>
     )
 }
 export default ProductCard;
 
-    
