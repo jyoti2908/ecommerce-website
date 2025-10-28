@@ -7,7 +7,7 @@ function Home() {
         <div>
             <SlidingProducts />
             {/* Responsive Image Slider */}
-            <div className="relative w-full h-40 sm:h-64 md:h-80 lg:h-[380px] overflow-hidden bg-gray-100">
+            <div className="mt-4 md:mt-0 relative w-full h-40 sm:h-64 md:h-80 lg:h-[380px] overflow-hidden bg-gray-100">
                 <img
                     className="absolute w-full h-full object-cover group-hover:animate-none animate-staticShow"
                     src="one.jpg"

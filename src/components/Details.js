@@ -38,20 +38,20 @@ function Details() {
                     <img className="h-12 w-36 mt-6 rounded" src="apple.jpg" />
                 </div>
                 <div>
-                    <div className="flex justify-around gap-4">
-                        <img className="h-12 w-16 rounded-full" src="original.webp" />
-                        <p><span className="font-bold text-md">100% ORIGINAL</span> gaurantee for <br /> all products at myntra.com</p>
+                    <div className="flex md:justify-around md:gap-4 gap-6">
+                        <img className="h-12 w-16 rounded-full mt-4 md:mt-0 ml-8 md:ml-0" src="original.webp" />
+                        <p className="mt-4 md:mt-0"><span className="font-bold text-md">100% ORIGINAL</span> gaurantee for <br /> all products at myntra.com</p>
                     </div>
                     <br />
                     <div className="flex justify-start gap-4">
-                        <img className="h-12 w-12 rounded-full ml-2" src="return.jpg" />
+                        <img className="h-12 w-12 rounded-full md:ml-2 ml-12" src="return.jpg" />
                         <p className="ml-4"><span className="font-bold">Return within 14days </span><br /> of receiving your order</p>
                     </div>
                 </div>
             </div>
             <div className="md:px-16 md:py-6">
                 <p className="text-xs font-bold mt-4 md:mt-0">POPULAR SEARCHES</p>
-                <p className="text-sm text-gray-500 mt-2 leading-normal"> Makeup |  Boxers | Dresses For Girls | T-Shirts | Sandals | Headphones | Babydolls | Blazers For Men | Handbags | Ladies | Watches |  Bags | Sport Shoes | Reebok Shoes | Puma Shoes |
+                <p className="text-sm text-gray-500 md:mt-2 leading-normal"> Makeup |  Boxers | Dresses For Girls | T-Shirts | Sandals | Headphones | Babydolls | Blazers For Men | Handbags | Ladies | Watches |  Bags | Sport Shoes | Reebok Shoes | Puma Shoes |
                     Makeup | Photo Frames | Wallets | Tops | Earrings | Fastrack | Watches | Kurtis | Nike | Smart | Watches  | Titan Watches | Designer Blouse | Gowns | Rings | Cricket Shoes | Forever 21  Eye
                     Adidas Shoes | Woodland Shoes | Punjabi Suits | Bikini  | Myntra Fashion Show | Lipstick | Saree | Watches | Dresses | Lehenga | Nike Shoes | Goggles | Bras | Suit  | Chinos | Shoes
                     Jewellery | Designers Sarees |

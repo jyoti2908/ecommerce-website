@@ -43,7 +43,7 @@ function ProductCard({ item }) {
                     </Link>
                 </div>
                 <br />
-                <button className="animate-shake addButton h-8 w-20 rounded-md bg-gray-500 p-1 m-2 ml-[100px] text-white text-xs hover:bg-red-500 " onClick={() => addToCart(item)}> Add to Cart</button>
+                <button className="animate-shake addButton h-8 w-20 rounded-md bg-gray-500 p-1 m-2 md:ml-[100px] text-white text-xs hover:bg-red-500 mx-auto " onClick={() => addToCart(item)}> Add to Cart</button>
                 <br />
             </div>
 
