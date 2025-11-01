@@ -55,10 +55,11 @@ function Login() {
     }
     // _________________________________________________________
     return (
-        <div className="bg-fuchsia-200 w-auto pt-12 h-full pb-16">
-            <div className="bg-white mx-72 flex items-center justify-center gap-8 rounded-xl">
-                <div className="py-4">
-                    <img src="login.jpg" alt="shopping image" className="h-108 w-72 rounded-xl " />
+        <div className="w-auto pt-12 h-screen mx-auto pb-16 bg-cover bg-center"
+          style={{ backgroundImage: "url('loginpage.avif')" }}>
+            <div className="bg-white md:mx-72 mx-4 flex md:flex-row flex-col items-center justify-center md:gap-8 gap-4 rounded-xl">
+                <div className="py-4 px-4 md:px-0">
+                    <img src="login.jpg" alt="shopping image" className="md:h-108 md:w-72 rounded-xl " />
                 </div>
                 <div>
                     <form>
@@ -86,7 +87,7 @@ function Login() {
                         <h4 className="text-gray-800 text-xs"> Or <span className="text-gray-500  hover:text-red-500">sign in with </span></h4>
                     </div>
                     
-                    <div className="flex flex-row gap-1 mt-6">
+                    <div className="flex flex-row gap-1 mt-6 mb-6 md:mb-0">
                         <a href="https://www.facebook.com/" className="text-gray-500 border-[1px] px-4 py-2 border-gray-200 rounded-full hover:bg-gray-400 hover:text-white">
                             <FaFacebook /></a>
                         <a href="https://x.com/" className="text-gray-500 border-[1px] px-4 py-2 border-gray-200 rounded-full hover:bg-gray-400 hover:text-white">
