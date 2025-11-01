@@ -18,7 +18,7 @@ function Wishlist() {
     }
 
     return (
-        <div className="h-screen w-screen bg-cover bg-repeat"
+        <div className="h-screen w-screen overflow-x-auto bg-cover bg-repeat"
             style={{ backgroundImage: "url('bags.jpg')" }}>
             <div className="flex">
                 <div className="w-screen bg-yellow-300 text-gray-600 md:text-2xl text-xs font-semibold h-auto overflow-hidden">
@@ -35,7 +35,7 @@ function Wishlist() {
                                 className="h-8 w-20 ml-40 mt-2 rounded-md bg-red-500 border-black-100 text-white text-xs hover:bg-red-400">
                                 <IoTrashOutline className="h-4 w-4 ml-8" /></button>
                         </div>
-                    ))} 
+                    ))}
                 </div>
                 <div>
                     <button

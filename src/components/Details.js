@@ -51,7 +51,7 @@ function Details() {
             </div>
             <div className="md:px-16 md:py-6">
                 <p className="text-xs font-bold mt-4 md:mt-0">POPULAR SEARCHES</p>
-                <p className="text-sm text-gray-500 md:mt-2 leading-normal"> Makeup |  Boxers | Dresses For Girls | T-Shirts | Sandals | Headphones | Babydolls | Blazers For Men | Handbags | Ladies | Watches |  Bags | Sport Shoes | Reebok Shoes | Puma Shoes |
+                <p className="text-sm text-gray-500 md:mt-2 leading-normal text-justify"> Makeup |  Boxers | Dresses For Girls | T-Shirts | Sandals | Headphones | Babydolls | Blazers For Men | Handbags | Ladies | Watches |  Bags | Sport Shoes | Reebok Shoes | Puma Shoes |
                     Makeup | Photo Frames | Wallets | Tops | Earrings | Fastrack | Watches | Kurtis | Nike | Smart | Watches  | Titan Watches | Designer Blouse | Gowns | Rings | Cricket Shoes | Forever 21  Eye
                     Adidas Shoes | Woodland Shoes | Punjabi Suits | Bikini  | Myntra Fashion Show | Lipstick | Saree | Watches | Dresses | Lehenga | Nike Shoes | Goggles | Bras | Suit  | Chinos | Shoes
                     Jewellery | Designers Sarees |

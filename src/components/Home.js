@@ -1,5 +1,6 @@
 import Details from "./Details";
 import Display from "./Display";
+import Footer from "./Footer";
 import ProductList from "./ProductList";
 import SlidingProducts from "./SlidingProducts";
 function Home() {
@@ -36,6 +37,7 @@ function Home() {
             <ProductList />
             <Display />
             <Details />
+            <Footer />
         </div>
     );
 }

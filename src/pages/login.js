@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import '../App.css';
+import { FaFacebook } from "react-icons/fa6";
+import { FaTwitterSquare } from "react-icons/fa";
+import { BiLogoGmail } from "react-icons/bi";
+import { FaSquareInstagram } from "react-icons/fa6";
 
 function Login() {
     const [userName, setUserName] = useState("");
@@ -51,25 +55,52 @@ function Login() {
     }
     // _________________________________________________________
     return (
-        <div className="w-screen px-4 py-4 mx-auto h-auto ">
-            <div className="md:mt-12 mt-6 md:ml-96 rounded-lg md:h-[300px] md:w-[504px] bg-blue-200 py-4 px-2">
-                <form>
-                    <label className="md:ml-5"> Username: </label>
-                    <input className="mt-8 ml-4 h-8 md:w-[340px] rounded-md text-center" type='text' placeholder='Username' value={userName}
-                        title='Username can be your Email or Phone Number'
-                        onChange={(e) => (setUserName(e.target.value))} />
+        <div className="bg-fuchsia-200 w-auto pt-12 h-full pb-16">
+            <div className="bg-white mx-72 flex items-center justify-center gap-8 rounded-xl">
+                <div className="py-4">
+                    <img src="login.jpg" alt="shopping image" className="h-108 w-72 rounded-xl " />
+                </div>
+                <div>
+                    <form>
+                        <h1 className="text-gray-600">Log in</h1>
+                        <h2 className="text-gray-500 text-xs">Not a member yet? <Link to="/signup" ><span className="text-red-500 hover:text-red-900 text-xs">Register now</span></Link></h2>
+                        <br />
+                        <input className="mb-4 w-full px-2 py-2 border-[1px] border-gray-300 rounded-full text-xs" type='text' placeholder='Username' value={userName}
+                            title='Username can be your Email or Phone Number'
+                            onChange={(e) => (setUserName(e.target.value))} />
+                        <input className="w-full px-2 py-2 border-[1px] border-gray-300 rounded-full text-xs" type='password' placeholder='Password' value={userPassword} onChange={(e) => (setUserPassword(e.target.value))} />
+                        <br />
+                        <input type="checkbox" className="mt-6"/>
+                        <label className="ml-2 text-right text-gray-800 text-xs">Keep me logged in</label>
+                    </form>
                     <br />
-                    <label className="md:ml-6"> Password: </label>
-                    <input className="mt-8 md:ml-4  ml-6 h-8 md:w-[340px] rounded-md text-center" type='password' placeholder='Password' value={userPassword} onChange={(e) => (setUserPassword(e.target.value))} />
-                </form>
-                <br></br>
-                {showMessage && <div className="text-center text-green-400 text-lg font-serif"><b>Login successful!</b></div>}
-                <br />
-                <button className="h-8 w-[70px] rounded-full bg-blue-400 hover:bg-blue-800 hover:text-white" onClick={() => handleFormSubmit()}>Submit</button>
-
-                <h2 className="text-center mt-4">If not registered already, kindly <Link to="/signup" className="text-red-500 hover:text-red-900">SignUp !</Link></h2>
+                    <div>
+                        <button className="w-full px-2 py-2 rounded-full text-sm text-white bg-orange-600 hover:bg-orange-500 hover:text-white"
+                            onClick={() => handleFormSubmit()}>SUBMIT</button>
+                    </div>
+                    <br />
+                    <div>
+                        <h3 className="text-right font-semibold text-gray-800 text-xs hover:text-red-500">Forgot your password?</h3>
+                    </div>
+                    <div>
+                        <h4 className="text-gray-800 text-xs"> Or <span className="text-gray-500  hover:text-red-500">sign in with </span></h4>
+                    </div>
+                    
+                    <div className="flex flex-row gap-1 mt-6">
+                        <a href="https://www.facebook.com/" className="text-gray-500 border-[1px] px-4 py-2 border-gray-200 rounded-full hover:bg-gray-400 hover:text-white">
+                            <FaFacebook /></a>
+                        <a href="https://x.com/" className="text-gray-500 border-[1px] px-4 py-2 border-gray-200 rounded-full hover:bg-gray-400 hover:text-white">
+                            <FaTwitterSquare /></a>
+                        <a href="https://www.gmail.com/" className="text-gray-500 border-[1px] px-4 py-2 border-gray-200 rounded-full hover:bg-gray-400 hover:text-white">
+                            <BiLogoGmail /></a>
+                        <a href="https://www.instagram.com/" className="text-gray-500 border-[1px] px-4 py-2 border-gray-200 rounded-full hover:bg-gray-400 hover:text-white">
+                            <FaSquareInstagram /></a>
+                    </div>
+                </div>
             </div>
+
         </div>
     )
+
 }
 export default Login;
