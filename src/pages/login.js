@@ -55,15 +55,13 @@ function Login() {
     }
     // _________________________________________________________
     return (
-        <div className="w-auto md:pt-12 pt-2 h-full mx-auto pb-16 bg-cover bg-center"
+        <div className="w-auto md:pt-12 pt-2 h-screen mx-auto pb-16 bg-cover bg-center"
           style={{ backgroundImage: "url('loginpage.avif')" }}>
             <div className="bg-white md:mx-72 mx-6 flex md:flex-row flex-col items-center justify-center md:gap-8 gap-4 rounded-xl">
                 <div className="py-4 px-4 md:px-0">
                     <img src="login.jpg" alt="shopping image" className="md:h-108 md:w-72 rounded-xl " />
                 </div>
-                <div className="mx-6 md:mx-0">
-                   
-
+                <div className="mx-6 md:mx-0">                 
                     <form>
                         <h1 className="text-gray-600">Log in</h1>
                         <h2 className="text-gray-500 text-xs">Not a member yet? <Link to="/signup" ><span className="text-red-500 hover:text-red-900 text-xs">Register now</span></Link></h2>
@@ -88,7 +86,6 @@ function Login() {
                     <div>
                         <h4 className="text-gray-800 text-xs"> Or <span className="text-gray-500  hover:text-red-500">sign in with </span></h4>
                     </div>
-                    
                     <div className="flex flex-row gap-1 mt-6 mb-6 md:mb-0">
                         <a href="https://www.facebook.com/" className="text-gray-500 border-[1px] px-4 py-2 border-gray-200 rounded-full hover:bg-gray-400 hover:text-white">
                             <FaFacebook /></a>
@@ -101,9 +98,7 @@ function Login() {
                     </div>
                 </div>
             </div>
-
         </div>
     )
-
 }
 export default Login;
