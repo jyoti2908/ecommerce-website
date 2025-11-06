@@ -27,24 +27,27 @@ function Cart() {
             cartItems.map((item) => (
               <div key={item.id}>
                 <ProductCard item={item} />
-                <div className="flex">
+                <div className="flex gap-12">
                   <div>
                     <button onClick={() => removeFromCart(item.id)} className="h-6 w-16 md:ml-16 mt-4 rounded-md bg-red-500 border-black-100 text-white text-xs hover:bg-red-400">Remove</button>
                   </div>
-                  <div>
-                    <button onClick={() => updateQuantity(item.id, item.quantity + 1)} className="rounded-md md:ml-12 mt-4 h-6 w-6 bg-green-400 text-center">+</button>
+                  <div className="flex ">
+                    <div>
+                      <button onClick={() => updateQuantity(item.id, item.quantity + 1)} className="rounded-md md:ml-12 mt-4 h-6 w-6 bg-green-400 text-center">+</button>
+                    </div>
+                    <div>
+                      <h2 className="h-6 w-16 mt-4 ml-1 rounded-md bg-green-500 border-black-100 text-white text-xs text-center p-1 hover:bg-green-400">Quantity:{item.quantity}</h2>
+                    </div>
+                    <div>
+                      <button onClick={() => item.quantity > 1
+                        ? updateQuantity(item.id, item.quantity - 1)
+                        : removeFromCart(item.id)
+                      }
+                        disabled={item.quantity === 1}
+                        className="rounded-md ml-1 mt-4 h-6 w-6 bg-red-400 text-center mb-1"> - </button>
+                    </div>
                   </div>
-                  <div>
-                    <h2 className="h-6 w-16 mt-4 ml-1 rounded-md bg-green-500 border-black-100 text-white text-xs text-center p-1 hover:bg-green-400">Quantity:{item.quantity}</h2>
-                  </div>
-                  <div>
-                    <button onClick={() => item.quantity > 1
-                      ? updateQuantity(item.id, item.quantity - 1)
-                      : removeFromCart(item.id)
-                    }
-                      disabled={item.quantity === 1}
-                      className="rounded-md ml-1 mt-4 h-6 w-6 bg-red-400 text-center mb-1"> - </button>
-                  </div>
+
                 </div>
               </div>
             ))

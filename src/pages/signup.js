@@ -77,7 +77,7 @@ function SignUp() {
                         <h4 className="text-gray-800 text-xs mt-2">Already have an account.<Link to="/login" ><span className="text-red-500 hover:text-red-900 text-xs"> Sign in</span></Link></h4>
                     </div>
                 </div>
-                <div className="py-4 px-4 md:px-0">
+                <div className="px-4 md:px-0">
                     <img src="sign.jpg" alt="shopping image" className="rounded-xl w-full h-full md:h-[430px] mb-6 md:mb-0" />
                 </div>
             </div>

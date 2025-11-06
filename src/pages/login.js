@@ -32,10 +32,10 @@ function Login() {
                         <h1 className="text-gray-600">Log in</h1>
                         <h2 className="text-gray-500 text-xs">Not a member yet? <Link to="/signup" ><span className="text-red-500 hover:text-red-900 text-xs">Register now</span></Link></h2>
                         <br />
-                        <input className="mb-4 w-full px-2 py-2 border-[1px] border-gray-300 rounded-full text-xs" type='text' placeholder='Username' value={userName}
+                        <input className="mb-4 w-full px-2 py-2 border-[1px] border-[#20B2AA] rounded-full text-xs" type='text' placeholder='Username' value={userName}
                             title='Use rname can be your Email or Phone Number'
                             onChange={(e) => (setUserName(e.target.value))} />
-                        <input className="w-full px-2 py-2 border-[1px] border-gray-300 rounded-full text-xs" type='password' placeholder='Password' value={userPassword} onChange={(e) => (setUserPassword(e.target.value))} />
+                        <input className="w-full px-2 py-2 border-[1px] border-[#20B2AA] rounded-full text-xs" type='password' placeholder='Password' value={userPassword} onChange={(e) => (setUserPassword(e.target.value))} />
                         <br />
                         <input type="checkbox" className="mt-6" />
                         <label className="ml-2 text-right text-gray-800 text-xs">Keep me logged in</label>
