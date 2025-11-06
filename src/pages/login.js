@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import '../App.css';
 import { FaFacebook } from "react-icons/fa6";
@@ -9,7 +9,6 @@ import { FaSquareInstagram } from "react-icons/fa6";
 function Login() {
     const [userName, setUserName] = useState("");
     const [userPassword, setUserPassword] = useState("");
-    const [showMessage, setShowMessage] = useState(false);
     const navigate = useNavigate(); // Hook to redirect
     // ________________________________________________________
     function handleFormSubmit() {
@@ -18,42 +17,9 @@ function Login() {
         } else if (userPassword.length < 4) {
             alert("Password should be a minimum of 4 characters");
         } else {
-            fetchData();
+            alert("Login Successful");
         }
     }
-    // ____________________________________________________
-    async function fetchData() {
-        try {
-            const response = await fetch('https://dummyjson.com/auth/login', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    username: 'emilys',
-                    password: 'emilyspass',
-                    expiresInMins: 30,
-                }),
-
-            })
-            const data = await response.json();
-            console.log('Fetched data:', data);
-
-            if (response.ok) {
-                localStorage.setItem('accessToken', data.token);
-                setShowMessage(true);
-                setTimeout(() => {
-                    setShowMessage(false);
-                    setUserName('');
-                    setUserPassword('');
-                    navigate('/');
-                }, 1000);
-            } else {
-                alert(data.message || 'Login failed');
-            }
-        } catch (error) {
-            console.log("Fetched error:", error)
-        }
-    }
-    // _________________________________________________________
     return (
         <div className="w-auto md:pt-12 pt-2 h-auto mx-auto pb-16 bg-cover bg-center"
             style={{ backgroundImage: "url('loginpage.avif')" }}>
@@ -67,7 +33,7 @@ function Login() {
                         <h2 className="text-gray-500 text-xs">Not a member yet? <Link to="/signup" ><span className="text-red-500 hover:text-red-900 text-xs">Register now</span></Link></h2>
                         <br />
                         <input className="mb-4 w-full px-2 py-2 border-[1px] border-gray-300 rounded-full text-xs" type='text' placeholder='Username' value={userName}
-                            title='Username can be your Email or Phone Number'
+                            title='Use rname can be your Email or Phone Number'
                             onChange={(e) => (setUserName(e.target.value))} />
                         <input className="w-full px-2 py-2 border-[1px] border-gray-300 rounded-full text-xs" type='password' placeholder='Password' value={userPassword} onChange={(e) => (setUserPassword(e.target.value))} />
                         <br />
