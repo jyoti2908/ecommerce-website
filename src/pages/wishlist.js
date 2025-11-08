@@ -31,9 +31,11 @@ function Wishlist() {
                     {wishListItems.map((item) => (
                         <div>
                             <ProductCard key={item.id} item={item} />
-                            <button onClick={() => removeFromWishList(item.id)}
-                                className="h-8 w-20 ml-40 mt-2 rounded-md bg-red-500 border-black-100 text-white text-xs hover:bg-red-400">
-                                <IoTrashOutline className="h-4 w-4 ml-8" /></button>
+                            <div className="flex items-center justify-center">
+                                <button onClick={() => removeFromWishList(item.id)}
+                                    className="h-8 w-20 mt-2 rounded-md bg-red-500 border-black-100 text-white text-xs hover:bg-red-400">
+                                    <IoTrashOutline className="h-4 w-4 ml-8" /></button>
+                            </div>
                         </div>
                     ))}
                 </div>
