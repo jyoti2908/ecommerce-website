@@ -3,7 +3,6 @@ import { Link, useNavigate } from "react-router-dom";
 
 function SignUp() {
     const [userFirstName, setUserFirstName] = useState("");
-    const [birth, setBirth] = useState('')
     const [userLastName, setUserLastName] = useState("");
     const [userNumber, setUserNumber] = useState("");
     const [userAddress, setUserAddress] = useState("");
@@ -50,10 +49,6 @@ function SignUp() {
                             <input className="w-full px-2 py-2 border-[1px] border-[#20B2AA] rounded text-xs" type='text' placeholder='Lastname' value={userLastName} title='Lastname should be in capital only' onChange={(e) => setUserLastName(e.target.value)} />
                         </div>
                         
-                        {/* <div className="mt-6">
-                            <input className="w-full px-2 py-2 border-[1px] border-[#20B2AA] rounded text-xs text-gray-400" type='date' placeholder='Date of Birth' value={birth} title='Date of Birth should be greater than 1950' onChange={(e) => setBirth(e.target.value)} />
-                        </div>
-                        */}
                         <div className="mt-4">
                             <input className="w-full px-2 py-2 border-[1px] border-[#20B2AA] rounded text-xs" type='contact' placeholder='Contact No' value={userNumber} onChange={(e) => setUserNumber(e.target.value)} />
                         </div>
