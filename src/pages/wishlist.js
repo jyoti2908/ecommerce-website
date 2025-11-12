@@ -19,7 +19,7 @@ function Wishlist() {
 
     return (
         <div className="h-screen w-screen overflow-x-auto bg-cover bg-repeat"
-            style={{ backgroundImage: "url('bags.jpg')" }}>
+            style={{ backgroundImage: "url('backwish.gif')" }}>
             <div className="flex">
                 <div className="w-screen bg-yellow-300 text-gray-600 md:text-2xl text-xs font-semibold h-auto overflow-hidden">
                     <p className="animate-marquee px-4 py-6">
